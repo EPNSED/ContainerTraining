@@ -1,0 +1,9 @@
+DistType "debian"
+MirrorURL "http://us.archive.ubuntu.com/ubuntu"
+OSVersion "xenial"
+Setup
+Bootstrap
+RunCmd mkdir /apps
+RunCmd apt-get update
+Cleanup
+

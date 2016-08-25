@@ -1,0 +1,12 @@
+DistType "debian"
+MirrorURL "http://us.archive.ubuntu.com/ubuntu/"
+OSVersion "xenial"
+Setup
+Bootstrap
+InstallPkgs firefox python-dev xorg wget bzip2 vim
+RunCmd wget https://repo.continuum.io/archive/Anaconda2-4.1.1-Linux-x86_64.sh
+RunCmd bash Anaconda2-4.1.1-Linux-x86_64.sh
+RunCmd apt-get update
+RunCmd mkdir /apps
+Cleanup
+
